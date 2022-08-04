@@ -1,8 +1,0 @@
-show dbs
-use mibase
-db.users.insert({"name":"Daniel})
-db.users.insert({"name":"Daniel"})
-db.users.find()
-show dbs
-use mibase
-db.users.find()
