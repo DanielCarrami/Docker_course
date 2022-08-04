@@ -1,0 +1,3 @@
+[submodule "multicontainer-app"]
+	path = multicontainer-app
+	url = https://github.com/DanielCarrami/node_redis_multicontainer
