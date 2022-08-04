@@ -1,0 +1,28 @@
+version: '3'
+services:
+  php-app:
+    container_name: php-app
+    build: .
+    networks:
+      - phpmysqlnetwork
+    restart: unless-stopped
+    ports:
+      - 80:80
+
+  db:
+    container_name: db
+    image: mysql:8
+    networks:
+      - phpmysqlnetwork
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+    volumes:
+      - mysql-data:/var/lib/mysql
+    restart: unless-stopped
+
+networks:
+  phpmysqlnetwork:
+    driver: bridge
+
+volumes:
+  mysql-data:
