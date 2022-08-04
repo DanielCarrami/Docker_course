@@ -1,3 +1,9 @@
 [submodule "multicontainer-app"]
 	path = multicontainer-app
 	url = https://github.com/DanielCarrami/node_redis_multicontainer
+[submodule "react-project/frontendd"]
+	path = react-project/frontendd
+	url = https://github.com/DanielCarrami/react-docker-app
+[submodule "react-project/fronten"]
+	path = react-project/fronten
+	url = https://github.com/DanielCarrami/react-docker-app
